@@ -1,0 +1,59 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+main{
+    background-image: linear-gradient(red ,black);
+}
+
+li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2{
+    font-family: 'Mrs Saint Delafield', cursive;
+    text-align: center;
+    color: red;
+}
+
+ul,li,h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(214, 19, 19);
+    text-align: center;
+    
+}
+
+a{
+    color: black;
+}
+
+i{
+    color: red;
+}
+
+nav li a{
+    text-align: center;
+    margin-left: 100px;
+}
+
+nav ul li a:hover {
+    opacity: .7;
+    transition: .7s;
+    transform: scale(1.5);
+    
+  }
+
+ 

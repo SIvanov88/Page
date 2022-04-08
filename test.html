@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+    crossorigin="anonymous"></script>
+    <title>Question game</title>
+</head>
+<body>
+    <div class="container">
+    <form  name="game" id="game">
+        <h1>What do you know about AC/DC?</h1>
+        <input id="btn" type="button" value="Start" onclick="start()">
+        <h2>Time:<span id="time-left">60</span></h2>
+        <div class="question">
+        <p>1:Whos the front man of AC/DC?</p>
+        <p><input class="checkbox" type="radio" name="question1"  value="1">a: Bon Jovi</p>
+        <p><input class="checkbox" type="radio" name="question1"  value="2">b: Lemmy Kilmister</p>
+        <p><input class="checkbox" type="radio" name="question1"  value="3">c: Brian Johnson</p>
+        <p><input class="checkbox" type="radio" name="question1"  value="4">d: Roger Daltrey</p>
+    </div>
+    <div class="question">
+        <p>2:Wich on is the album of AC/DC?</p>
+        <p><input class="checkbox" type="radio" name="question2" value="1">a: Thunderstuck</p>
+        <p><input class="checkbox" type="radio" name="question2" value="2">b: Black Ice</p>
+        <p><input class="checkbox" type="radio" name="question2" value="3">c: Chase the Ace</p>
+        <p><input class="checkbox" type="radio" name="question2" value="4">d: Wanted dead or alive</p>
+    </div>
+    <div class="question">
+        <p>3:At River Plate stadium AC/DC start the concert with?</p>
+        <p><input class="checkbox" type="radio" name="question3" value="1">a: Highway to hell</p>
+        <p><input class="checkbox" type="radio" name="question3" value="2">b: Rock or burst</p>
+        <p><input class="checkbox" type="radio" name="question3" value="3">c: Back in black</p>
+        <p><input class="checkbox" type="radio" name="question3" value="4">d: Rock n roll train</p>
+    </div>
+    <div class="question">
+        <p>4:AC/DC was inducted into hall of fame?</p>
+        <p><input class="checkbox" type="radio" name="question4" value="1">a: 2000</p>
+        <p><input class="checkbox" type="radio" name="question4" value="2">b: 1995</p>
+        <p><input class="checkbox" type="radio" name="question4" value="3">c: 2003</p>
+        <p><input class="checkbox" type="radio" name="question4" value="4">d: 2002</p>
+    </div>
+    <div class="question">
+        <p>5:Tne idea of the name AC/DC comes from ?</p>
+        <p><input class="checkbox" type="radio" name="question5" value="1">a: Brian's wife</p>
+        <p><input class="checkbox" type="radio" name="question5" value="2">b: Angus's brother</p>
+        <p><input class="checkbox" type="radio" name="question5" value="3">c: Angus's sister</p>
+        <p><input class="checkbox" type="radio" name="question5" value="4">d: Malcolm's cousin </p>
+    </div>
+    <div class="question">
+        <p>6:The first Grammy appearance of AC/DC?</p>
+        <p><input class="checkbox" type="radio" name="question6" value="1">a: 2014</p>
+        <p><input class="checkbox" type="radio" name="question6" value="2">b: 2016</p>
+        <p><input class="checkbox" type="radio" name="question6" value="3">c: 2010</p>
+        <p><input class="checkbox" type="radio" name="question6" value="4">d: 2011</p>
+    </div>
+    <div class="question">
+        <p>7:AC/DC's Back in black album is?</p>
+        <p><input class="checkbox" type="radio" name="question7" value="1">a: The best album of the band</p>
+        <p><input class="checkbox" type="radio" name="question7" value="2">b: Tribute to Bon Scott</p>
+        <p><input class="checkbox" type="radio" name="question7" value="3">c: The greatest albums in rock history</p>
+        <p><input class="checkbox" type="radio" name="question7" value="4">d: Back in black is not album of AC/DC</p>
+    </div>
+    <div class="question">
+        <p>8:During Brian Johnson's  absence the singer of AC/DC was?</p>
+        <p><input class="checkbox" type="radio" name="question8" value="1">a: Rob Halford</p>
+        <p><input class="checkbox" type="radio" name="question8" value="2">b: Axl Rose</p>
+        <p><input class="checkbox" type="radio" name="question8" value="3">c: Bryan Adams</p>
+        <p><input class="checkbox" type="radio" name="question8" value="4">d: David Coverdale</p>
+    </div>
+    <div class="question">
+        <p>9:The song Money Shot of AC/DC is from album?</p>
+        <p><input class="checkbox" type="radio" name="question9" value="1">a: Back in black</p>
+        <p><input class="checkbox" type="radio" name="question9" value="2">b: Ballbreaker</p>
+        <p><input class="checkbox" type="radio" name="question9" value="3">c: High Voltage </p>
+        <p><input class="checkbox" type="radio" name="question9" value="4">d: Power up</p>
+    </div>
+    <div class="question">
+        <p>10:The new AC/DC album is?</p>
+        <p><input class="checkbox" type="radio" name="question10" value="1">a: Ballbreaker</p>
+        <p><input class="checkbox" type="radio" name="question10" value="2">b: Power up</p>
+        <p><input class="checkbox" type="radio" name="question10" value="3">c: Power down</p>
+        <p><input class="checkbox" type="radio" name="question10" value="4">d: Rock or burst</p>
+    </div>
+    <input id="btn" class="first" type="button" value="Finish" onclick="finish()"> 
+    <input id="btn" class="second" type="button" value="Result" onclick="result()"> 
+    <br><button><a href="index.html">Back to the site</a></button>
+    
+    </form>
+ </div>
+    <script>
+     function finish(){
+                    var finish = document.getElementsByClassName("checkbox");
+                    var i;
+                    for (i = 0; i < choice.length; i++) {
+                   choice[i].disabled = true;
+                      }
+             }   
+           
+     function result() {
+            var correct = 0;
+            var answer1 = document.game.question1.value;
+            var answer2 = document.game.question2.value;
+            var answer3 = document.game.question3.value;
+            var answer4 = document.game.question4.value;
+            var answer5 = document.game.question5.value;
+            var answer6 = document.game.question6.value;
+            var answer7 = document.game.question7.value;
+            var answer8 = document.game.question8.value;
+            var answer9 = document.game.question9.value;
+            var answer10 = document.game.question10.value;
+            if (answer1=="3") {
+                correct++
+            }
+            if (answer2=="2") {
+                correct++
+            }
+            if (answer3=="4") {
+                correct++
+            }
+            if (answer4=="3") {
+                correct++
+            }
+            if (answer5=="3") {
+                correct++
+            }
+            if (answer6=="1") {
+                correct++
+            }
+            if (answer7=="2") {
+                correct++
+            }
+            if (answer8=="2") {
+                correct++
+            }
+            if (answer9=="4") {
+                correct++
+            }
+            if (answer10=="2") {
+                correct++
+            }
+            window.alert(correct);
+            if (correct<=4) {
+               window.alert("You know nothing about this band!!!")
+            }else 
+            if (correct<=7) {
+                window.alert("If you like Ac/Dc learn more about them!!!")
+            }
+            else
+            if(correct>7){
+                window.alert('High Voltage fan')
+            }
+           
+          }
+
+          
+            
+         
+        
+           var choice = document.getElementsByClassName("checkbox");
+           var i;
+           for (i = 0; i < choice.length; i++) {
+                choice[i].disabled = true;
+                      }
+                      
+           function start(){
+            
+            var choice = document.getElementsByClassName("checkbox");
+           var i;
+           for (i = 0; i < choice.length; i++) {
+                choice[i].disabled = false;
+                      }
+                var start = document.getElementById('btn').disabled = true;
+                var end = document.g
+
+                      var timeleftdisp = document.getElementById('time-left')
+                        var buton = document.getElementById('btn')
+                  timeleft = 60;
+                  setInterval(function(){
+                      if(timeleft <= 0){
+                          clearInterval(timeleft = 0)
+                          var choice = document.getElementsByClassName("checkbox");
+           var i;
+           for (i = 0; i < choice.length; i++) {
+                choice[i].disabled = true;
+                      }
+                      
+                      }
+                      timeleftdisp.innerHTML = timeleft
+                      timeleft -=1;
+                  },1000)
+
+                  buton.addEventListener('click',start)
+
+                  
+                    }
+
+                
+            
+                    $(document).ready(function(){
+    $(".first").click(function(){
+        $(".second").show();
+    })
+ })
+         
+    </script>
+
+</body>
+     
+</html>

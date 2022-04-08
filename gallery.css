@@ -1,0 +1,39 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+img {
+  width: 320px;
+  height: 190px;
+  margin: 20px 0;
+  border-radius: 50px;
+  border: 1px solid red;
+  box-shadow: 10px 10px 5px 5px rgb(190, 176, 176);
+}
+
+img:hover {
+  opacity: .7;
+  transition: .7s;
+  transform: scale(1.05);
+  
+}
+
+nav ul li a:hover {
+  opacity: .7;
+  transition: .7s;
+  transform: scale(1.5);
+  
+}
+
+.container{
+  padding-bottom: 20px;
+}
+
+.boxrow {
+  margin: 0px;
+  padding: 0px;
+}
+

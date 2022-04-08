@@ -1,0 +1,136 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+
+.body{
+    line-height: 5;
+  
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+
+nav li a{
+    text-align: center;
+    margin-left: 100px;
+}
+
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p{
+    text-align: left;
+    text-decoration: none;
+    padding: 0%;
+    margin-bottom: 2%;
+}
+
+main{
+     background-image: linear-gradient(red ,black);
+     
+}
+
+
+
+#jumbotron,p{
+  font-style: italic;
+  
+}
+
+
+#j-dark{
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px 5px grey;
+    height: 400px;
+}
+
+#j-light{
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px 5px white;
+    height: 400px;
+}
+
+
+
+#one,#two,#three,#four{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+#img1,#img2,#img3,#img4{
+    float: left;
+}
+
+
+
+h1,h3{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-style: italic;
+   text-align: center;
+   color: black;
+   
+}
+
+h3{
+    padding-top: 20px;
+}
+
+li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h2{
+    font-family: 'Mrs Saint Delafield', cursive;
+    text-align: center;
+    color: red;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+i{
+    color: red;
+}
+
+#name{
+    color: white;
+}
+
+ul,li,h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(214, 19, 19);
+    text-align: center;
+    
+}
+
+nav ul li a:hover {
+    opacity: .7;
+    transition: .7s;
+    transform: scale(1.5);
+    
+  }
+
+  #jb{
+     margin-left: 25%;
+  }
